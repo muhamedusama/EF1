@@ -1,10 +1,15 @@
-﻿namespace EF1
+﻿using EF1.DbContexts;
+
+namespace EF1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            using CompanyDbContext dbContext = new CompanyDbContext();
+            //do some code
+
+            
         }
     }
 }
